@@ -11,8 +11,8 @@ struct AddBookView: View {
     @Environment(\.modelContext) var modelContext // is like a link to book class, so we can read and write new books into the memory
     @Environment(\.dismiss) var dismiss
     
-    @State private var title = ""
-    @State private var author = ""
+    @State private var title = "Some title" // Forcing default - Challenge 1
+    @State private var author = "Some guy" // Forcing default - Challenge 1
     @State private var rating = 3
     @State private var genre = "Fantasy"
     @State private var review = ""
